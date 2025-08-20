@@ -1,0 +1,371 @@
+/* Fuentes Importadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset Estilos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --color-primary: #00AA4D;
+    --color-secundary: #2E2E2D;
+    --color-text: #231F20;
+    --color-white: #FFFFFF;
+    --color-dorado: #bca86f;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Estilos index.html */
+
+/* Header / Navbar */
+header {
+    background-color: var(--color-primary);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Seccion Introduccion */
+main {
+    background-image: url(../images/nacional-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px 0px 20px 0px;
+}
+
+.introduccion {
+    background-color: var(--color-secundary);
+    padding: 20px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.introduccion h1 {
+    font-size: 40px;
+}
+
+.introduccion p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Seccion Ultimos Partidos*/
+.ultimos-partidos, .tabla-posiciones {
+    background-color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.ultimos-partidos-container {
+    background-color: var(--color-secundary);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ultimos-partidos-container h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.ultimos-partidos-container .team-card {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ultimos-partidos-container .team-card span {
+    color: var(--color-dorado);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ultimos-partidos-container .team-card .card-container {
+    margin: 20px 0;
+}
+
+.ultimos-partidos-container .team-card .card {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ultimos-partidos-container .team-card .card p {
+    font-size: 18px;
+}
+
+.ultimos-partidos-container .team-card .card img {
+    width: 12%;
+}
+
+/* Tabla Posiciones */
+.tabla-posiciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabla-posiciones .tabla-container {
+    background-color: var(--color-secundary);
+    color: var(--color-white);
+    padding: 20px;
+    border-radius: 20px;;
+}
+
+.tabla-posiciones .tabla-container h2, .tabla-posiciones .tabla-container h3 {
+    text-align: center;
+}
+
+.tabla-posiciones .tabla-container h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.tabla-posiciones .tabla-container table {
+    margin: 20px 0;
+}
+
+.tabla-posiciones .tabla-container table th {
+    padding: 0px 10px;
+    color: var(--color-dorado);
+}
+
+.tabla-posiciones .tabla-container table td {
+    padding: 5px 10px;
+}
+
+/* Footer */
+footer {
+    background-image: url(../images/nacional_fondo_footer_.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.redes {
+    background-image: url(../images/footer_nacional.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.redes h3 {
+    font-size: 22px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.redes ul li {
+    margin: 0 10px;
+}
+
+.patrocinadores h3 {
+    font-size: 30px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.patrocinadores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.patrocinadores-container img {
+    width: 15%;
+    margin: 0 20px;
+}
+
+.escudo {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.escudo img {
+    width: 10%;
+}
+
+/* Pagina Historia */
+.historia-title, .multimedia-title, .contacto-title {
+    background-color: var(--color-secundary);
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: var(--color-white);
+}
+
+.historia h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-primary);
+    padding: 20px;
+}
+
+.historia-container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 20px 0px;
+}
+
+.historia-container div {
+    text-align: center;
+    background-color: var(--color-secundary);
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.historia-container div h3 {
+    font-size: 30px;
+    color: var(--color-dorado);
+}
+
+.historia-container div p {
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+/* Pagina Multimedia */
+
+.multimedia {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.multimedia h2 {
+    font-size: 35px;
+    padding: 20px;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.multimedia-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.multimedia-container div {
+    background-color: var(--color-secundary);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+}
+
+.multimedia-container div iframe {
+    margin-bottom: 20px;
+}
+
+.multimedia-container div h3 {
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-dorado);
+}
+
+.multimedia-container div p {
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+/* Pagina Contacto */
+.contacto h2 {
+    font-size: 35px;
+    padding: 20px;
+    color: var(--color-primary);
+    text-align: center;
+}
+.contacto p {
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.contacto form {
+    margin: 30px auto;
+    width: 60%;
+}
+
+.contacto form input {
+    height: 30px;
+}
+
+.contacto form input, .contacto form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.contacto form input[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+
