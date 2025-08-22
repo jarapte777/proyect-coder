@@ -11,25 +11,33 @@
 </head>
 <body>
     <header>
-        <!-- Comienzo Navbar-->
-        <a href="../index.html"><img src="../images/logo-nacional.svg" alt="logo Club Atletico Nacional"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="multimedia.html">Multimedia</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
+        <!-- Navbar bootstrap -->
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <div class="logo-container">
+                    <a class="navbar-brand" href="../index.html"><img src="../images/logo-nacional.svg" alt="logo Club Atletico Nacional"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar__collapse--width" id="navbarNav">
+                    <ul class="navbar-nav navbar__nav--content">
+                        <li class="nav-item">
+                            <a class="nav-link  nav__link--color" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link--color" href="./historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link--color" href="./multimedia.html">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__link--color active" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <!-- Fin Navbar-->
     </header>
     <main>
         <h1 class="contacto-title">Contacto</h1>

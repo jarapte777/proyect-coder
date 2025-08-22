@@ -30,30 +30,25 @@ body {
 header {
     background-color: var(--color-primary);
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header img {
-    width: 200px;
+    width: 60%;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-around;
+.navbar__collapse--width {
+    flex-grow: initial;
 }
 
-header nav li {
-    list-style: none;
-    margin: 0 15px;
+.navbar__nav--content {
+    width: 500px;
+    justify-content: space-between;
 }
 
-header nav a {
+.nav__link--color {
     color: var(--color-white);
     font-size: 20px;
     font-weight: bold;
-    text-decoration: none;
 }
 
 /* Seccion Introduccion */
