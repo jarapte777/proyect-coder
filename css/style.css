@@ -77,6 +77,20 @@ main {
 }
 
 /* Seccion Ultimos Partidos*/
+.container--bg-color {
+    background-color: var(--color-secundary);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.ultimos-partidos h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
 .ultimos-partidos, .tabla-posiciones {
     background-color: #fff;
     width: 80%;
@@ -85,52 +99,37 @@ main {
     border-radius: 20px;
 }
 
-.ultimos-partidos-container {
-    background-color: var(--color-secundary);
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.ultimos-partidos-container h2 {
-    font-size: 30px;
-    text-align: center;
-    color: var(--color-white);
-    text-transform: uppercase;
-}
-
-.ultimos-partidos-container .team-card {
+.team-card {
     margin: 20px 0;
     text-align: center;
 }
 
-.ultimos-partidos-container .team-card span {
+.team-card span {
     color: var(--color-dorado);
     font-size: 22px;
     font-weight: bold;
 }
 
-.ultimos-partidos-container .team-card .card-container {
+.card-container {
     margin: 20px 0;
 }
 
-.ultimos-partidos-container .team-card .card {
+.card-resultado {
     color: var(--color-white);
     font-size: 18px;
     font-weight: bold;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.ultimos-partidos-container .team-card .card p {
+.card-resultado p {
     font-size: 18px;
+    margin-bottom: 0;
 }
 
-.ultimos-partidos-container .team-card .card img {
-    width: 12%;
+.card-resultado img {
+    width: 8%;
 }
 
 /* Tabla Posiciones */
@@ -336,10 +335,6 @@ footer {
 .contacto form {
     margin: 30px auto;
     width: 60%;
-}
-
-.contacto form input {
-    height: 30px;
 }
 
 .contacto form input, .contacto form textarea {
