@@ -27,13 +27,13 @@ body {
 /* Estilos index.html */
 
 /* Header / Navbar */
-header {
-    background-color: var(--color-primary);
-    padding: 20px;
-}
-
 header img {
     width: 60%;
+}
+
+.navbar--background {
+    background-color: var(--color-primary);
+    padding: 20px;
 }
 
 .navbar__collapse--width {
@@ -65,6 +65,7 @@ main {
     padding: 20px;
     color: var(--color-white);
     text-align: center;
+    margin-top: 117px;
 }
 
 .introduccion h1 {
@@ -197,6 +198,7 @@ footer {
     align-items: center;
     list-style: none;
     margin: 20px 0;
+    padding: 0;
 }
 
 .redes ul li {
@@ -239,6 +241,8 @@ footer {
     text-align: center;
     font-size: 40px;
     color: var(--color-white);
+    margin-top: 117px;
+    margin-bottom: 0;
 }
 
 .historia h2 {
@@ -246,32 +250,62 @@ footer {
     font-size: 30px;
     color: var(--color-primary);
     padding: 20px;
+    margin: 20px 0;
 }
 
-.historia-container {
+.carousel--margin {
+    margin: 30px 0;
+}
+
+.carousel__historia-container {
     display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    overflow-x: scroll;
-    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
 }
 
-.historia-container div {
+.historia__item {
     text-align: center;
     background-color: var(--color-secundary);
     border-radius: 20px;
     margin: 0 10px;
     padding: 20px;
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.historia-container div h3 {
+.historia__item h3 {
     font-size: 30px;
     color: var(--color-dorado);
 }
 
-.historia-container div p {
+.historia__item p {
     font-size: 16px;
     color: var(--color-white);
+}
+
+.carousel--position {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.carousel--position [data-bs-target] {
+    background-color: var(--color-secundary);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/chevron-right.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/chevron-left.svg);
 }
 
 /* Pagina Multimedia */
