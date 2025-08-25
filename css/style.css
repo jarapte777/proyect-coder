@@ -399,7 +399,7 @@ footer {
 
 @media (max-width: 576px) {
     header img {
-        width: 80%;
+        width: 55%;
     }
     .logo-container {
         width: 100%;
