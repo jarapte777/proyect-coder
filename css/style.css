@@ -94,7 +94,7 @@ main {
 
 .ultimos-partidos, .tabla-posiciones {
     background-color: #fff;
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     padding: 30px;
     border-radius: 20px;
@@ -404,7 +404,7 @@ footer {
         justify-content: space-between;
     }
     .introduccion {
-        margin-top: 100px;
+        margin-top: 112px;
     }
     .navbar__nav--content {
         width: 100%;
@@ -415,6 +415,10 @@ footer {
     }
     .introduccion p {
         font-size: 16px;
+    }
+    .ultimos-partidos, .tabla-posiciones {
+        width: 90%;
+        padding: 20px;
     }
     .ultimos-partidos h2 {
         font-size: 22px;
@@ -444,8 +448,11 @@ footer {
     .tabla-posiciones .tabla-container table td {
         font-size: 16px;
     }
+    .carousel__historia-container {
+        padding: 0 15px;
+    }
     .historia-title, .multimedia-title, .contacto-title {
-        margin-top: 100px;
+        margin-top: 112px;
         font-size: 25px;
         line-height: 30px;
     }
@@ -455,6 +462,7 @@ footer {
     .historia__item {
         padding: 10px;
         width: 100%;
+        margin: 0 5px;
     }
     .historia__item p {
         font-size: 15px;
@@ -463,7 +471,8 @@ footer {
         width: 7%;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon {
-        display: none;
+        width: 3rem;
+        height: 3rem;
     }
     .multimedia {
         margin: 0px auto;
