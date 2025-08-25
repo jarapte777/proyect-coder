@@ -129,6 +129,10 @@ main {
     margin-bottom: 0;
 }
 
+.card-resultado p:first-of-type {
+    width: 23%;
+}
+
 .card-resultado img {
     width: 8%;
 }
@@ -321,6 +325,7 @@ footer {
     color: var(--color-primary);
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .multimedia-container {
@@ -367,7 +372,7 @@ footer {
 }
 
 .contacto form {
-    margin: 30px auto;
+    margin: 50px auto;
     width: 60%;
 }
 
@@ -386,6 +391,114 @@ footer {
     width: 20%;
     margin: 0 auto;
     border-radius: 20px;
+}
+
+/* Media Queries */
+
+/* Celulares */
+
+@media (max-width: 576px) {
+    header img {
+        width: 50%;
+    }
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .introduccion {
+        margin-top: 111px;
+    }
+    .navbar__nav--content {
+        width: 100%;
+        text-align: center;
+    }
+    .introduccion h1 {
+        font-size: 25px;
+    }
+    .introduccion p {
+        font-size: 16px;
+    }
+    .ultimos-partidos h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .card-resultado p:first-of-type {
+        width: 30%;
+    }
+    .team-card span {
+        font-size: 20px;
+    }
+    .tabla-posiciones {
+        flex-direction: column;
+    }
+    .tabla-posiciones .tabla-container h2 {
+        font-size: 22px;
+    }
+    .tabla-posiciones .tabla-container:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .tabla-posiciones .tabla-container h3 {
+        font-size: 18px;
+    }
+    .tabla-posiciones .tabla-container table td {
+        font-size: 18px;
+    }
+    .historia-title, .multimedia-title, .contacto-title {
+        margin-top: 111px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .historia h2 {
+        font-size: 22px;
+    }
+    .historia__item {
+        padding: 10px;
+        width: 35%;
+    }
+    .historia__item p {
+        font-size: 15px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 7%;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .multimedia {
+        margin: 0px auto;
+    }
+    .multimedia h2 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    .multimedia-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+    .multimedia-container div {
+        background-color: var(--color-secundary);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 15px;
+        text-align: center;
+    }
+    .multimedia-container div iframe {
+        width: 100%;
+    }
+    .contacto h2 {
+        font-size: 22px;
+    }
+    .contacto p {
+        font-size: 18px;
+    }
+    .contacto form {
+        width: 100%;
+    }
+    .contacto form input[type="submit"] {
+        width: 30%;
+    }
 }
 
 
