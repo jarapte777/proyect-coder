@@ -40,6 +40,10 @@ header img {
     flex-grow: initial;
 }
 
+.navbar-toggler--height{
+    border: 1px solid #fff;
+}
+
 .navbar__nav--content {
     width: 500px;
     justify-content: space-between;
@@ -405,9 +409,13 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .introduccion {
         margin-top: 112px;
+    }
+    .navbar-toggler--height:focus{
+        box-shadow: none;
     }
     .navbar__nav--content {
         width: 100%;
