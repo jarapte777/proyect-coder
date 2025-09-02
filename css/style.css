@@ -1,169 +1,168 @@
-/* Fuentes Importadas */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /* Reset Estilos*/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Variables */
 
-:root {
+/* :root {
     --font-family: "Poppins", sans-serif;
     --color-primary: #00AA4D;
     --color-secundary: #2E2E2D;
     --color-text: #231F20;
     --color-white: #FFFFFF;
     --color-dorado: #bca86f;
-}
+} */
 
-body {
+/* body {
     font-family: var(--font-family);
-}
+} */
 
 /* Estilos index.html */
 
 /* Header / Navbar */
-header img {
+/* header img {
     width: 60%;
-}
+} */
 
-.navbar--background {
+/* .navbar--background {
     background-color: var(--color-primary);
     padding: 20px;
-}
+} */
 
-.navbar__collapse--width {
+/* .navbar__collapse--width {
     flex-grow: initial;
-}
+} */
 
-.navbar-toggler--height{
+/* .navbar-toggler--border{
     border: 1px solid #fff;
-}
+} */
 
-.navbar__nav--content {
+/* .navbar__nav--content {
     width: 500px;
     justify-content: space-between;
-}
+} */
 
-.nav__link--color {
+/* .nav__link--color {
     color: var(--color-white);
     font-size: 20px;
     font-weight: bold;
-}
+} */
 
 /* Seccion Introduccion */
-main {
+/* main {
     background-image: url(../images/nacional-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 0px 0px 20px 0px;
-}
+} */
 
-.introduccion {
+/* .introduccion {
     background-color: var(--color-secundary);
     padding: 20px;
     color: var(--color-white);
     text-align: center;
     margin-top: 117px;
-}
+} */
 
-.introduccion h1 {
+/* .introduccion h1 {
     font-size: 40px;
-}
+} */
 
-.introduccion p {
+/* .introduccion p {
     font-size: 22px;
     margin: 10px 0;
-}
+} */
 
 /* Seccion Ultimos Partidos*/
-.container--bg-color {
+/* .container--bg-color {
     background-color: var(--color-secundary);
     border-radius: 20px;
     padding: 20px;
-}
+} */
 
-.ultimos-partidos h2 {
+/* .ultimos-partidos h2 {
     font-size: 30px;
     text-align: center;
     color: var(--color-white);
     text-transform: uppercase;
     margin-bottom: 25px;
-}
+} */
 
-.ultimos-partidos, .tabla-posiciones {
+/* .ultimos-partidos, .tabla-posiciones {
     background-color: #fff;
     width: 80%;
     margin: 20px auto;
     padding: 30px;
     border-radius: 20px;
-}
+} */
 
-.team-card {
+/* .team-card {
     margin: 20px 0;
     text-align: center;
-}
+} */
 
-.team-card span {
+/* .team-card span {
     color: var(--color-dorado);
     font-size: 22px;
     font-weight: bold;
-}
+} */
 
-.card-container {
+/* .card-container {
     margin: 20px 0;
-}
+} */
 
-.card-resultado {
+/* .card-resultado {
     color: var(--color-white);
     font-size: 18px;
     font-weight: bold;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 
-.card-resultado p {
+/* .card-resultado p {
     font-size: 18px;
     margin-bottom: 0;
-}
+} */
 
-.card-resultado p:first-of-type {
+/* .card-resultado p:first-of-type {
     width: 23%;
-}
+} */
 
-.card-resultado img {
+/* .card-resultado img {
     width: 8%;
-}
+} */
 
 /* Tabla Posiciones */
-.tabla-posiciones {
+/* .tabla-posiciones {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
-.tabla-posiciones .tabla-container {
+/* .tabla-posiciones .tabla-container {
     background-color: var(--color-secundary);
     color: var(--color-white);
     padding: 20px;
-    border-radius: 20px;;
+    border-radius: 20px;
 }
 
 .tabla-posiciones .tabla-container h2, .tabla-posiciones .tabla-container h3 {
     text-align: center;
-}
+} */
 
-.tabla-posiciones .tabla-container h2 {
+/* .tabla-posiciones .tabla-container h2 {
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 5px;
-}
+} */
 
 .tabla-posiciones .tabla-container table {
     margin: 20px 0;

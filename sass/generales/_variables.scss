@@ -1,0 +1,14 @@
+$font-primary: "Poppins", sans-serif;
+$color-primary: #00AA4D;
+$color-secundary: #2E2E2D;
+$color-text: #231F20;
+$color-white: #FFFFFF;
+$color-dorado: #bca86f;
+
+/* Mixins */
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

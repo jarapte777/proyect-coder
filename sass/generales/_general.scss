@@ -1,0 +1,15 @@
+@use "../generales/variables" as v;
+
+/* Reset Estilos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos body */
+
+body {
+    font-family: v.$font-primary;
+}

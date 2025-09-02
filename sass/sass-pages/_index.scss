@@ -1,0 +1,93 @@
+// Llamo el partial de variables ya que lo voy a usar acá
+@use "../generales/variables" as v;
+
+/* Estilos Page Index */
+
+main {
+    background-image: url(../images/nacional-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px 0px 20px 0px;
+    .introduccion {
+        background-color: v.$color-secundary;
+        padding: 20px;
+        color: v.$color-white;
+        text-align: center;
+        margin-top: 117px;
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+    }
+    .ultimos-partidos {
+        background-color: #fff;
+        width: 80%;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 20px;
+        .container--bg-color {
+            background-color: v.$color-secundary;
+            border-radius: 20px;
+            padding: 20px;
+            h2 {
+                font-size: 30px;
+                text-align: center;
+                color: v.$color-white;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+            .team-card {
+                margin: 20px 0;
+                text-align: center;
+                span {
+                    color: v.$color-dorado;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                .card-container {
+                    margin: 20px 0;
+                    .card-resultado {
+                        color: v.$color-white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        @include v.flex (space-evenly, center);
+                        img {
+                            width: 8%;
+                        }
+                        p {
+                            font-size: 18px;
+                            margin-bottom: 0;
+                        }
+                        p:first-of-type {
+                            width: 23%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tabla-posiciones {
+        @extend .ultimos-partidos;
+        @include v.flex (space-around, center);
+        .tabla-container {
+            background-color: v.$color-secundary;
+            color: v.$color-white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            h2 {
+                font-size: 25px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
