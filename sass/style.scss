@@ -1,9 +1,12 @@
-/* use */
+// llamamos todas las partials 
 @use "./generales/variables";
 @use "./generales/general";
 @use "./generales/header";
 @use "./sass-pages/index";
-
+@use "./sass-pages/historia";
+@use "./sass-pages/multimedia";
+@use "./sass-pages/contacto";
+@use "./generales/footer";
 
 
 /* Fuentes Importadas */

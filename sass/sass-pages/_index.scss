@@ -5,8 +5,7 @@
 
 main {
     background-image: url(../images/nacional-background.jpg);
-    background-size: cover;
-    background-position: center;
+    @include v.background-image (cover, center, no-repeat);
     background-attachment: fixed;
     padding: 0px 0px 20px 0px;
     .introduccion {
@@ -86,6 +85,16 @@ main {
             }
             h3 {
                 font-size: 22px;
+            }
+            table {
+                margin: 20px 0;
+                th {
+                    padding: 0px 10px;
+                    color: v.$color-dorado;
+                }
+                td {
+                    padding: 5px 10px;
+                }
             }
         }
     }

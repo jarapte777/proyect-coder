@@ -1,0 +1,57 @@
+// Llamo el partial de variables ya que lo voy a usar acá
+@use "../generales/variables" as v;
+
+/* Estilos Footer */
+
+footer {
+    background-image: url(../images/nacional_fondo_footer_.png);
+    background-size: cover;
+    background-position: center;
+    // Seccion Redes
+    .redes {
+        background-image: url(../images/footer_nacional.png);
+        @include v.background-image (cover, center, no-repeat);
+        height: 200px;
+        padding: 20px 0;
+        h3 {
+            font-size: 22px;
+            color: v.$color-white;
+            text-align: center;
+        }
+        ul {
+            @include v.flex (center, center);
+            list-style: none;
+            margin: 20px 0;
+            padding: 0;
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+    // Seccion Patrocinadores
+    .patrocinadores {
+        h3{
+            font-size: 30px;
+            color: v.$color-white;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .patrocinadores-container {
+            @include v.flex (center, center);
+            margin: 30px 0;
+            img {
+                width: 15%;
+                margin: 0 20px;
+            }
+        }
+    }
+    // Seccion Escudo
+    .escudo {
+        text-align: center;
+        padding-bottom: 40px;
+        img {
+            width: 10%;
+        }
+    }
+}

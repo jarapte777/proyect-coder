@@ -1,0 +1,50 @@
+//Llamo la partial de las variables
+@use "../generales/variables" as v;
+@use "../sass-pages/historia";
+
+/* Estilos Page Contacto */
+main {
+    .contacto-title {
+        @extend .historia-title;
+    }
+    .contacto {
+        h2 {
+            font-size: 35px;
+            padding: 20px;
+            color: v.$color-primary;
+            text-align: center;
+        }
+        p {
+            font-size: 22px;
+            text-align: center;
+            color: v.$color-text;
+            font-weight: bold;
+        }
+        form {
+            margin: 50px auto;
+            width: 60%;
+            input {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                border: 1px solid;
+                padding: 5px;
+            }
+            input[type="submit"] {
+                background-color: v.$color-primary;
+                color: v.$color-white;
+                font-weight: bold;
+                width: 20%;
+                margin: 0 auto;
+                border-radius: 20px;
+            }
+            textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                border: 1px solid;
+                padding: 5px;
+            }
+        }
+    }
+}

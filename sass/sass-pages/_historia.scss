@@ -1,0 +1,65 @@
+//llamamos el partial de las variables
+@use "../generales/variables" as v;
+
+/* Estilos Historia */
+main {
+    .historia-title {
+        background-color: v.$color-secundary;
+        padding: 20px;
+        text-align: center;
+        font-size: 40px;
+        color: v.$color-white;
+        margin-top: 117px;
+        margin-bottom: 0;
+    }
+    .historia {
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: v.$color-primary;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .carousel--margin {
+            margin: 30px 0;
+            .carousel__historia-container {
+                @include v.flex (center, center);
+                .historia__item {
+                    text-align: center;
+                    background-color: v.$color-secundary;
+                    border-radius: 20px;
+                    margin: 0 10px;
+                    padding: 20px;
+                    width: 25%;
+                    height: 300px;
+                    @include v.flex (center, center);
+                    flex-direction: column;
+                    h3 {
+                        font-size: 30px;
+                        color: v.$color-dorado;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: v.$color-white;
+                    }
+                }
+            }
+            .carousel-control-prev-icon {
+                background-image: url(../images/chevron-left.svg);
+                width: 4rem;
+                height: 4rem;
+            }
+            .carousel-control-next-icon {
+                @extend .carousel-control-prev-icon;
+                background-image: url(../images/chevron-right.svg);
+            }
+            .carousel--position {
+                position: relative;
+                margin-top: 1rem;
+                [data-bs-target] {
+                    background-color: v.$color-secundary;
+                }
+            }
+        }
+    }
+}
