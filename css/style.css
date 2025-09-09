@@ -401,7 +401,7 @@
 /* Celulares */
 
 @media (max-width: 576px) {
-    header img {
+    /* header img {
         width: 55%;
     }
     .logo-container {
@@ -409,115 +409,115 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .introduccion {
+    } */
+    /* .introduccion {
         margin-top: 112px;
-    }
-    .navbar-toggler--height:focus{
+    } */
+    /* .navbar-toggler--height:focus{
         box-shadow: none;
-    }
-    .navbar__nav--content {
+    } */
+    /* .navbar__nav--content {
         width: 100%;
         text-align: center;
-    }
-    .introduccion h1 {
+    } */
+    /* .introduccion h1 {
         font-size: 25px;
-    }
-    .introduccion p {
+    } */
+    /* .introduccion p {
         font-size: 16px;
-    }
-    .ultimos-partidos, .tabla-posiciones {
+    } */
+    /* .ultimos-partidos, .tabla-posiciones {
         width: 90%;
         padding: 20px;
-    }
-    .ultimos-partidos h2 {
+    } */
+    /* .ultimos-partidos h2 {
         font-size: 22px;
         margin-bottom: 15px;
-    }
-    .card-resultado p:first-of-type {
+    } */
+    /* .card-resultado p:first-of-type {
         width: 40%;
-    }
-    .team-card span {
+    } */
+    /* .team-card span {
         font-size: 20px;
-    }
-    .tabla-posiciones {
+    } */
+    /* .tabla-posiciones {
         flex-direction: column;
-    }
-    .tabla-posiciones .tabla-container {
+    } */
+    /* .tabla-posiciones .tabla-container {
         padding: 10px;
-    }
-    .tabla-posiciones .tabla-container h2 {
+    } */
+    /* .tabla-posiciones .tabla-container h2 {
         font-size: 22px;
-    }
-    .tabla-posiciones .tabla-container:nth-child(1) {
+    } */
+    /* .tabla-posiciones .tabla-container:nth-child(1) {
         margin-bottom: 30px;
-    }
-    .tabla-posiciones .tabla-container h3 {
+    } */
+    /* .tabla-posiciones .tabla-container h3 {
         font-size: 18px;
-    }
-    .tabla-posiciones .tabla-container table td {
+    } */
+    /* .tabla-posiciones .tabla-container table td {
         font-size: 16px;
-    }
+    } */
     .carousel__historia-container {
         padding: 0 15px;
     }
-    .historia-title, .multimedia-title, .contacto-title {
+    /* .historia-title, .multimedia-title, .contacto-title {
         margin-top: 112px;
         font-size: 25px;
         line-height: 30px;
-    }
-    .historia h2 {
+    } */
+    /* .historia h2 {
         font-size: 22px;
-    }
-    .historia__item {
+    } */
+    /* .historia__item {
         padding: 10px;
         width: 100%;
         margin: 0 5px;
-    }
-    .historia__item p {
+    } */
+    /* .historia__item p {
         font-size: 15px;
-    }
-    .carousel-control-next, .carousel-control-prev {
+    } */
+    /* .carousel-control-next, .carousel-control-prev {
         width: 7%;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon {
+    } */
+    /* .carousel-control-next-icon, .carousel-control-prev-icon {
         width: 3rem;
         height: 3rem;
-    }
-    .multimedia {
+    } */
+    /* .multimedia {
         margin: 0px auto;
-    }
-    .multimedia h2 {
+    } */
+    /* .multimedia h2 {
         font-size: 25px;
         margin-bottom: 0px;
-    }
-    .multimedia-container {
+    } */
+    /* .multimedia-container {
     flex-direction: column;
     flex-wrap: nowrap;
-}
-    .multimedia-container div {
+} */
+    /* .multimedia-container div {
         background-color: var(--color-secundary);
         border-radius: 20px;
         padding: 20px;
         margin: 15px;
         text-align: center;
-    }
-    .multimedia-container div iframe {
+    } */
+    /* .multimedia-container div iframe {
         width: 100%;
         height: 100%;
-    }
-    .contacto h2 {
+    } */
+    /* .contacto h2 {
         font-size: 22px;
-    }
-    .contacto p {
+    } */
+    /* .contacto p {
         font-size: 18px;
-    }
-    .contacto form {
+    } */
+    /* .contacto form {
         width: 100%;
-    }
-    .contacto form input[type="submit"] {
+    } */
+    /* .contacto form input[type="submit"] {
         width: 30%;
-    }
+    } */
 }
 
 

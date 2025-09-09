@@ -60,9 +60,9 @@ main {
                         p {
                             font-size: 18px;
                             margin-bottom: 0;
-                        }
-                        p:first-of-type {
-                            width: 23%;
+                            &:first-of-type {
+                                width: 23%;
+                            }
                         }
                     }
                 }
@@ -72,19 +72,21 @@ main {
     .tabla-posiciones {
         @extend .ultimos-partidos;
         @include v.flex (space-around, center);
+        overflow: hidden;
         .tabla-container {
             background-color: v.$color-secundary;
             color: v.$color-white;
             padding: 20px;
             border-radius: 20px;
-            text-align: center;
             h2 {
                 font-size: 25px;
                 text-transform: uppercase;
                 margin-bottom: 5px;
+                text-align: center;
             }
             h3 {
                 font-size: 22px;
+                text-align: center;
             }
             table {
                 margin: 20px 0;

@@ -31,10 +31,25 @@ body {
   width: 500px;
   justify-content: space-between;
 }
-.navbar--background .navbar__collapse--width .navbar__nav--content .nav__link--color {
+.navbar--background .navbar__collapse--width .navbar__nav--content .nav-item .nav__link--color {
   color: #FFFFFF;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+}
+.navbar--background .navbar__collapse--width .navbar__nav--content .nav-item .nav__link--color::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #FFFFFF;
+  border-radius: 0;
+  transition: all 0.5s ease-in-out;
+}
+.navbar--background .navbar__collapse--width .navbar__nav--content .nav-item .nav__link--color:hover::after {
+  width: 100%;
 }
 
 /* Estilos Page Index */
@@ -113,21 +128,23 @@ main .tabla-posiciones {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 main .tabla-posiciones .tabla-container {
   background-color: #2E2E2D;
   color: #FFFFFF;
   padding: 20px;
   border-radius: 20px;
-  text-align: center;
 }
 main .tabla-posiciones .tabla-container h2 {
   font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  text-align: center;
 }
 main .tabla-posiciones .tabla-container h3 {
   font-size: 22px;
+  text-align: center;
 }
 main .tabla-posiciones .tabla-container table {
   margin: 20px 0;
@@ -152,7 +169,7 @@ main .historia-title, main .contacto-title, main .multimedia-title {
 }
 main .historia h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color: #00AA4D;
   padding: 20px;
   margin: 20px 0;
@@ -220,6 +237,7 @@ main .multimedia .multimedia-container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 main .multimedia .multimedia-container div {
   background-color: #2E2E2D;
@@ -227,9 +245,11 @@ main .multimedia .multimedia-container div {
   padding: 20px;
   margin: 40px;
   text-align: center;
+  width: 40%;
 }
 main .multimedia .multimedia-container div iframe {
   margin-bottom: 20px;
+  width: 100%;
 }
 main .multimedia .multimedia-container div h3 {
   font-size: 22px;
@@ -272,6 +292,12 @@ main .contacto form input[type=submit] {
   width: 20%;
   margin: 0 auto;
   border-radius: 20px;
+  transition: 0.5s ease;
+}
+main .contacto form input[type=submit]:hover {
+  background-color: #2E2E2D;
+  color: #bca86f;
+  border: 1px solid #2E2E2D;
 }
 main .contacto form textarea {
   display: block;
@@ -334,6 +360,262 @@ footer .escudo {
 }
 footer .escudo img {
   width: 10%;
+}
+
+/* Media Queries */
+@media (max-width: 1199.98px) {
+  .navbar--background .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar--background .logo-container .navbar-toggler--border:focus {
+    box-shadow: none;
+  }
+  .navbar--background .navbar__collapse--width .navbar__nav--content {
+    width: 100%;
+    text-align: center;
+  }
+  main .introduccion h1 {
+    font-size: 35px;
+  }
+  main .ultimos-partidos {
+    width: 90%;
+  }
+  main .ultimos-partidos .container--bg-color .team-card .card-container .card-resultado p:first-of-type {
+    width: 30%;
+  }
+  main .tabla-posiciones {
+    width: 90%;
+  }
+  main .historia-title {
+    font-size: 35px;
+  }
+  main .historia h2 {
+    padding: 20px 140px;
+    font-size: 30px;
+  }
+  main .multimedia-title {
+    font-size: 35px;
+  }
+  main .multimedia h2 {
+    font-size: 30px;
+  }
+  main .multimedia .multimedia-container div h3 {
+    font-size: 20px;
+  }
+  main .contacto-title {
+    font-size: 35px;
+  }
+  main .contacto h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  main .introduccion h1 {
+    font-size: 30px;
+  }
+  main .introduccion p {
+    font-size: 20px;
+  }
+  main .ultimos-partidos .container--bg-color {
+    max-width: 810px;
+  }
+  main .tabla-posiciones {
+    flex-direction: column;
+  }
+  main .tabla-posiciones .tabla-container:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  main .historia-title {
+    font-size: 30px;
+  }
+  main .historia h2 {
+    font-size: 25px;
+  }
+  main .multimedia-title {
+    font-size: 30px;
+  }
+  main .multimedia .multimedia-container div {
+    padding: 15px;
+    margin: 30px;
+  }
+  main .multimedia .multimedia-container div iframe {
+    min-height: 220px;
+    height: 100%;
+  }
+  main .multimedia .multimedia-container div h3 {
+    font-size: 16px;
+  }
+  main .multimedia .multimedia-container div p {
+    font-size: 16px;
+  }
+  main .contacto-title {
+    font-size: 30px;
+  }
+  main .contacto h2 {
+    font-size: 25px;
+  }
+  main .contacto p {
+    padding: 0 140px;
+  }
+}
+@media (max-width: 767.98px) {
+  main .introduccion h1 {
+    font-size: 25px;
+  }
+  main .introduccion p {
+    font-size: 18px;
+  }
+  main .ultimos-partidos .container--bg-color h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  main .historia-title {
+    font-size: 25px;
+  }
+  main .historia h2 {
+    font-size: 20px;
+    padding: 20px 80px;
+  }
+  main .historia .carousel--margin .carousel__historia-container .historia__item {
+    width: 35%;
+  }
+  main .multimedia-title {
+    font-size: 25px;
+  }
+  main .multimedia h2 {
+    font-size: 25px;
+  }
+  main .multimedia .multimedia-container div {
+    margin: 20px;
+    padding: 15px;
+  }
+  main .contacto-title {
+    font-size: 25px;
+  }
+  main .contacto h2 {
+    font-size: 20px;
+  }
+  main .contacto p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .introduccion {
+    margin-top: 112px;
+  }
+  main .introduccion h1 {
+    font-size: 20px;
+  }
+  main .introduccion p {
+    font-size: 16px;
+  }
+  main .ultimos-partidos {
+    padding: 20px;
+  }
+  main .ultimos-partidos .container--bg-color h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  main .ultimos-partidos .container--bg-color .team-card span {
+    font-size: 20px;
+  }
+  main .ultimos-partidos .container--bg-color .team-card .card-container .card-resultado p:first-of-type {
+    width: 40%;
+  }
+  main .tabla-posiciones .tabla-container {
+    padding: 10px;
+  }
+  main .tabla-posiciones .tabla-container h2 {
+    font-size: 22px;
+  }
+  main .tabla-posiciones .tabla-container:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  main .tabla-posiciones .tabla-container h3 {
+    font-size: 18px;
+  }
+  main .tabla-posiciones .tabla-container table td {
+    font-size: 16px;
+  }
+  main .historia-title {
+    margin-top: 112px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  main .historia h2 {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+  main .historia .carousel--margin .carousel__historia-container .historia__item {
+    padding: 10px;
+    width: 40%;
+    margin: 0 5px;
+  }
+  main .historia .carousel--margin .carousel__historia-container .historia__item p {
+    font-size: 15px;
+  }
+  main .historia .carousel--margin .carousel-control-prev {
+    width: 7%;
+  }
+  main .historia .carousel--margin .carousel-control-prev .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  main .historia .carousel--margin .carousel-control-next {
+    width: 7%;
+  }
+  main .historia .carousel--margin .carousel-control-next .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  main .multimedia-title {
+    margin-top: 112px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  main .multimedia {
+    margin: 0px auto;
+  }
+  main .multimedia h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  main .multimedia .multimedia-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main .multimedia .multimedia-container div {
+    margin: 15px;
+    width: 70%;
+  }
+  main .multimedia .multimedia-container div iframe {
+    width: 100%;
+    height: 100%;
+  }
+  main .multimedia .multimedia-container div h3 {
+    font-size: 18px;
+  }
+  main .contacto-title {
+    margin-top: 112px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  main .contacto h2 {
+    font-size: 18px;
+  }
+  main .contacto p {
+    font-size: 16px;
+    padding: 0 90px;
+  }
+  main .contacto form {
+    width: 90%;
+  }
+  main .contacto form input[type=submit] {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=sass-style.css.map */

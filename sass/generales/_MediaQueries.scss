@@ -1,0 +1,390 @@
+//Llamamos el partial de las variables
+@use "../generales/variables" as v;
+
+/* Media Queries */
+@media (max-width: 1199.98px) {
+    // navbar
+    .navbar--background {
+        .logo-container {
+            @include v.flex (space-between, center);
+            width: 100%;
+            .navbar-toggler--border {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .navbar__collapse--width {
+                .navbar__nav--content {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+    }
+    // page index
+    main {
+        .introduccion {
+            h1 {
+                font-size: 35px;
+            }
+        }
+        .ultimos-partidos {
+            width: 90%;
+            .container--bg-color {
+                .team-card {
+                    .card-container {
+                        .card-resultado {
+                            p {
+                                &:first-of-type {
+                                    width: 30%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tabla-posiciones {
+            width: 90%;
+        }
+    }
+    // page historia
+    main {
+        .historia-title {
+            font-size: 35px;
+        }
+        .historia {
+            h2 {
+                padding: 20px 140px;
+                font-size: 30px;
+            }
+        }
+    }
+    // page multimedia
+    main {
+        .multimedia-title {
+            font-size: 35px;
+        }
+        .multimedia {
+            h2 {
+                font-size: 30px;
+            }
+            .multimedia-container {
+                div {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // page contacto
+    main {
+        .contacto-title {
+            font-size: 35px;
+        }
+        .contacto {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    // page index
+    main {
+        .introduccion {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .ultimos-partidos {
+            .container--bg-color {
+                max-width: 810px;
+            }
+        }
+        .tabla-posiciones {
+            flex-direction: column;
+            .tabla-container {
+                &:nth-child(1) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    // page historia
+    main {
+        .historia-title {
+            font-size: 30px;
+        }
+        .historia {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+    }
+    // page multimedia
+    main {
+        .multimedia-title {
+            font-size: 30px;
+        }
+        .multimedia {
+            .multimedia-container {
+                div {
+                    padding: 15px;
+                    margin: 30px;
+                    iframe {
+                        min-height: 220px;
+                        height: 100%;
+                    }
+                    h3 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    // page contacto
+    main {
+        .contacto-title {
+            font-size: 30px;
+        }
+        .contacto {
+            h2 {
+                font-size: 25px;
+            }
+            p {
+                padding: 0 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    //page index
+    main {
+        .introduccion {
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .ultimos-partidos {
+            .container--bg-color {
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    // page hi¡storia
+    main {
+        .historia-title {
+            font-size: 25px;
+        }
+        .historia {
+            h2 {
+                font-size: 20px;
+                padding: 20px 80px;
+            }
+            .carousel--margin {
+                .carousel__historia-container {
+                    .historia__item {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+    // page multimedia
+    main {
+        .multimedia-title {
+            font-size: 25px;
+        }
+        .multimedia {
+            h2 {
+                font-size: 25px;
+            }
+            .multimedia-container {
+                div {
+                    margin: 20px;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+    //page contacto
+    main {
+        .contacto-title {
+            font-size: 25px;
+        }
+        .contacto {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    //page index
+    main {
+        .introduccion {
+            margin-top: 112px;
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .ultimos-partidos {
+            padding: 20px;
+            .container--bg-color {
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
+                .team-card {
+                    span {
+                        font-size: 20px;
+                    }
+                    .card-container {
+                        .card-resultado {
+                            p:first-of-type {
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tabla-posiciones {
+            .tabla-container {
+                padding: 10px;
+                h2 {
+                    font-size: 22px;
+                }
+                &:nth-child(1) {
+                    margin-bottom: 30px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                table {
+                    td {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    //page historia
+    main {
+        .historia-title {
+            margin-top: 112px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .historia {
+            h2 {
+                font-size: 18px;
+                padding: 20px 50px;
+            }
+            .carousel--margin {
+                .carousel__historia-container {
+                    .historia__item {
+                        padding: 10px;
+                        width: 40%;
+                        margin: 0 5px;
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .carousel-control-prev {
+                    width: 7%;
+                    .carousel-control-prev-icon {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+                .carousel-control-next {
+                    width: 7%;
+                    .carousel-control-next-icon {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    // page multimedia
+    main {
+        .multimedia-title {
+            margin-top: 112px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .multimedia {
+            margin: 0px auto;
+            h2 {
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+            .multimedia-container {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                div {
+                    margin: 15px;
+                    width: 70%;
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    //page contacto
+    main {
+        .contacto-title {
+            margin-top: 112px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .contacto {
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+                padding: 0 90px;
+            }
+            form {
+                width: 90%;
+                input {
+                    &[type="submit"] {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

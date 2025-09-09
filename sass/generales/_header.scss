@@ -19,10 +19,27 @@
         .navbar__nav--content {
             width: 500px;
             justify-content: space-between;
-            .nav__link--color {
-                color: v.$color-white;
-                font-size: 20px;
-                font-weight: bold;
+            .nav-item {
+                .nav__link--color {
+                    color: v.$color-white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 4px;
+                        background: v.$color-white;
+                        border-radius: 0;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

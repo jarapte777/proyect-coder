@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Link Estilos -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Sass Styles-->
     <link rel="stylesheet" href="./css/sass-style.css">
     <title>Atletico Nacional</title>
@@ -55,7 +55,7 @@
         <!-- Ultimos Partido -->
         <section class="ultimos-partidos">
             <!-- uso de la grilla de bootstrap -->
-            <div class="container container--bg-color">
+            <div class="container container--bg-color" data-aos="fade-up">
                 <div class="row">
                     <h2>Últimos Partidos</h2>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -102,7 +102,7 @@
         <!-- Sección Tablas Posiciones y Reclasificación -->
         <section class="tabla-posiciones">
             <!-- acá se usará media queries-->
-            <div class="tabla-container">
+            <div class="tabla-container" data-aos="fade-right">
                 <h2>posiciones</h2>
                 <h3>liga Betplay 2025-ll</h3>
                 <table>
@@ -160,7 +160,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="tabla-container">
+            <div class="tabla-container" data-aos="fade-left">
                 <h2>Reclasificación</h2>
                 <h3>liga Betplay</h3>
                 <table>
@@ -259,5 +259,10 @@
     </footer>
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -21,14 +21,17 @@ main {
         .multimedia-container {
             @include v.flex (center, center);
             flex-wrap: wrap;
+            overflow: hidden;
             div {
                 background-color: v.$color-secundary;
                 border-radius: 20px;
                 padding: 20px;
                 margin: 40px;
                 text-align: center;
+                width: 40%;
                 iframe {
                     margin-bottom: 20px;
+                    width: 100%;
                 }
                 h3 {
                     font-size: 22px;
