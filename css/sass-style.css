@@ -503,8 +503,11 @@ footer .escudo img {
   }
 }
 @media (max-width: 575.98px) {
+  header .navbar--background {
+    padding: 12px;
+  }
   main .introduccion {
-    margin-top: 112px;
+    margin-top: 92px;
   }
   main .introduccion h1 {
     font-size: 20px;
@@ -537,11 +540,15 @@ footer .escudo img {
   main .tabla-posiciones .tabla-container h3 {
     font-size: 18px;
   }
+  main .tabla-posiciones .tabla-container table th {
+    padding: 0 5px;
+  }
   main .tabla-posiciones .tabla-container table td {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 5px 8px;
   }
   main .historia-title {
-    margin-top: 112px;
+    margin-top: 92px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -551,7 +558,7 @@ footer .escudo img {
   }
   main .historia .carousel--margin .carousel__historia-container .historia__item {
     padding: 10px;
-    width: 40%;
+    width: 45%;
     margin: 0 5px;
   }
   main .historia .carousel--margin .carousel__historia-container .historia__item p {
@@ -572,7 +579,7 @@ footer .escudo img {
     height: 3rem;
   }
   main .multimedia-title {
-    margin-top: 112px;
+    margin-top: 92px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -589,7 +596,7 @@ footer .escudo img {
   }
   main .multimedia .multimedia-container div {
     margin: 15px;
-    width: 70%;
+    width: 90%;
   }
   main .multimedia .multimedia-container div iframe {
     width: 100%;
@@ -599,7 +606,7 @@ footer .escudo img {
     font-size: 18px;
   }
   main .contacto-title {
-    margin-top: 112px;
+    margin-top: 92px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -608,7 +615,7 @@ footer .escudo img {
   }
   main .contacto p {
     font-size: 16px;
-    padding: 0 90px;
+    padding: 0 50px;
   }
   main .contacto form {
     width: 90%;

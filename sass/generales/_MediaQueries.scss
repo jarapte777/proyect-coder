@@ -240,10 +240,16 @@
 }
 
 @media (max-width: 575.98px) {
+    //navbar
+    header {
+        .navbar--background {
+            padding: 12px;
+        }
+    }
     //page index
     main {
         .introduccion {
-            margin-top: 112px;
+            margin-top: 92px;
             h1 {
                 font-size: 20px;
             }
@@ -285,8 +291,12 @@
                     font-size: 18px;
                 }
                 table {
+                    th {
+                        padding: 0 5px;
+                    }
                     td {
-                        font-size: 16px;
+                        font-size: 15px;
+                        padding: 5px 8px;
                     }
                 }
             }
@@ -295,7 +305,7 @@
     //page historia
     main {
         .historia-title {
-            margin-top: 112px;
+            margin-top: 92px;
             font-size: 20px;
             line-height: 30px;
         }
@@ -308,7 +318,7 @@
                 .carousel__historia-container {
                     .historia__item {
                         padding: 10px;
-                        width: 40%;
+                        width: 45%;
                         margin: 0 5px;
                         p {
                             font-size: 15px;
@@ -335,7 +345,7 @@
     // page multimedia
     main {
         .multimedia-title {
-            margin-top: 112px;
+            margin-top: 92px;
             font-size: 20px;
             line-height: 30px;
         }
@@ -350,7 +360,7 @@
                 flex-wrap: nowrap;
                 div {
                     margin: 15px;
-                    width: 70%;
+                    width: 90%;
                     iframe {
                         width: 100%;
                         height: 100%;
@@ -365,7 +375,7 @@
     //page contacto
     main {
         .contacto-title {
-            margin-top: 112px;
+            margin-top: 92px;
             font-size: 20px;
             line-height: 30px;
         }
@@ -375,7 +385,7 @@
             }
             p {
                 font-size: 16px;
-                padding: 0 90px;
+                padding: 0 50px;
             }
             form {
                 width: 90%;
